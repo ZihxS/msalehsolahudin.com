@@ -763,36 +763,43 @@ body.js-enabled img.lazy-fade.loaded {
   color: #a71d2a !important;
 }
 
-/* Custom Modern Responsive Table */
+/* Custom Modern Responsive Table for Light Background */
 .custom-table-container {
   margin-top: 25px;
 }
 .custom-table {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  border: 1px solid rgba(220, 53, 69, 0.3) !important;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   font-size: 14px;
 }
 .custom-table th {
-  background: rgba(220, 53, 69, 0.2);
+  background: #dc3545 !important;
   font-weight: bold;
-  border-bottom: 2px solid #dc3545 !important;
-  color: #fff;
+  color: #ffffff !important;
   padding: 12px !important;
   font-family: 'BT', sans-serif;
   letter-spacing: 0.5px;
+  border: none !important;
 }
 .custom-table td {
   padding: 12px 10px !important;
   vertical-align: middle !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #dee2e6 !important;
+  color: #212529 !important; /* Dark text for light background */
 }
 .custom-table tr:last-child td {
   border-bottom: none !important;
+}
+/* Striped rows for better readability */
+.custom-table tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+/* Hover effect */
+.custom-table tbody tr:hover {
+  background-color: rgba(220, 53, 69, 0.03);
 }
 
 @media (max-width: 768px) {
