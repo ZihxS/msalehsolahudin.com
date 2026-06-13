@@ -1,4 +1,4 @@
-# 👨‍💻 Muhammad Saleh Solahudin (Zihxs)
+# Muhammad Saleh Solahudin (Zihxs)
 ### *Lead Backend Engineer | Tech Content Creator | Cyber Security Enthusiast*
 
 <p align="center">
@@ -15,45 +15,45 @@
 
 ---
 
-## 🖥️ Halaman Pratonton (Preview)
+## Halaman Pratonton (Preview)
 
 Berikut adalah tampilan antarmuka dari website portofolio interaktif yang dapat diakses di **[msalehsolahudin.com](https://msalehsolahudin.com)**
 
 ---
 
-## 📋 Daftar Isi
-* [📖 Tentang Repositori Ini](#-tentang-repositori-ini)
-* [⚡ Fitur Utama & Keunggulan Teknis](#-fitur-utama--keunggulan-teknis)
-* [📁 Daftar Portofolio Unggulan](#-daftar-portofolio-unggulan)
-* [🛠️ Ringkasan Kompetensi Teknis](#️-ringkasan-kompetensi-teknis)
-* [💼 Pengalaman Kerja](#-pengalaman-kerja)
-* [🏆 Penghargaan & Prestasi](#-penghargaan--prestasi)
-* [🔑 Implementasi Proteksi DevTools](#-implementasi-proteksi-devtools)
-* [💻 Cara Menjalankan Secara Lokal](#-cara-menjalankan-secara-lokal)
-* [✉️ Hubungi Saya](#️-hubungi-saya)
+## Daftar Isi
+* [Tentang Repositori Ini](#tentang-repositori-ini)
+* [Fitur Utama & Keunggulan Teknis](#fitur-utama--keunggulan-teknis)
+* [Daftar Portofolio Unggulan](#daftar-portofolio-unggulan)
+* [Ringkasan Kompetensi Teknis](#ringkasan-kompetensi-teknis)
+* [Pengalaman Kerja](#pengalaman-kerja)
+* [Penghargaan & Prestasi](#penghargaan--prestasi)
+* [Implementasi Proteksi DevTools](#implementasi-proteksi-devtools)
+* [Cara Menjalankan Secara Lokal](#cara-menjalankan-secara-lokal)
+* [Hubungi Saya](#hubungi-saya)
 
 ---
 
-## 📖 Tentang Repositori Ini
+## Tentang Repositori Ini
 Repositori ini berisi kode sumber (*source code*) untuk website portofolio pribadi saya. Website ini dirancang sebagai landing page interaktif bergaya resume profesional untuk memamerkan riwayat karier, sertifikasi, kompetensi teknis, serta berbagai proyek aplikasi web, mobile, dan desktop yang telah saya bangun sejak tahun 2015.
 
 ---
 
-## ⚡ Fitur Utama & Keunggulan Teknis
+## Fitur Utama & Keunggulan Teknis
 
 Website ini dikembangkan menggunakan kombinasi teknologi web statis modern dengan beberapa pengoptimalan performa dan keamanan khusus:
 
 | Fitur | Teknologi | Keterangan |
 | :--- | :--- | :--- |
-| **🛡️ DevTools & Inspect Protection** | JavaScript (Vanilla) | Mencegah upaya menyalin kode atau melakukan inspeksi elemen melalui klik kanan, F12, dan berbagai kombinasi tombol (`Ctrl/Cmd + U/I/J/C/S`). Jika terpicu, halaman otomatis dialihkan ke repositori GitHub ini. |
-| **🚀 Progressive Lazy Loading** | JS Event & CSS | Mempercepat *First Contentful Paint* (FCP) dengan merender placeholder gambar berkualitas rendah terlebih dahulu sebelum memuat gambar resolusi tinggi dengan efek *fade-in* transisi halus. |
-| **💬 Typing Simulation** | `Typed.js` | Simulasi interaktif efek mesin tik pada bagian header perkenalan diri yang secara adaptif menyesuaikan teks berdasarkan ukuran lebar layar perangkat pengunjung. |
-| **📱 Dinamis & Responsif** | CSS Media Queries | Mendukung pengalaman ramah seluler (*mobile-friendly*) di mana elemen antarmuka (seperti teks nama, ukuran gambar, tombol rekrutmen) menyesuaikan ukuran secara *realtime*. |
-| **🖼️ Lightbox Gallery** | `Lightbox2` & JQuery | Memungkinkan pengunjung memperbesar tangkapan layar portofolio langsung di halaman utama tanpa harus dialihkan ke halaman lain. |
+| **DevTools & Inspect Protection** | JavaScript (Vanilla) | Mencegah upaya menyalin kode atau melakukan inspeksi elemen melalui klik kanan, F12, dan berbagai kombinasi tombol (`Ctrl/Cmd + U/I/J/C/S`). Jika terpicu, halaman otomatis dialihkan ke repositori GitHub ini. |
+| **Progressive Lazy Loading** | JS Event & CSS | Mempercepat *First Contentful Paint* (FCP) dengan merender placeholder gambar berkualitas rendah terlebih dahulu sebelum memuat gambar resolusi tinggi dengan efek *fade-in* transisi halus. |
+| **Typing Simulation** | `Typed.js` | Simulasi interaktif efek mesin tik pada bagian header perkenalan diri yang secara adaptif menyesuaikan teks berdasarkan ukuran lebar layar perangkat pengunjung. |
+| **Dinamis & Responsif** | CSS Media Queries | Mendukung pengalaman ramah seluler (*mobile-friendly*) di mana elemen antarmuka (seperti teks nama, ukuran gambar, tombol rekrutmen) menyesuaikan ukuran secara *realtime*. |
+| **Lightbox Gallery** | `Lightbox2` & JQuery | Memungkinkan pengunjung memperbesar tangkapan layar portofolio langsung di halaman utama tanpa harus dialihkan ke halaman lain. |
 
 ---
 
-## 📁 Daftar Portofolio Unggulan
+## Daftar Portofolio Unggulan
 
 Beberapa proyek besar yang dipamerkan dalam website portofolio ini mencakup:
 
@@ -68,34 +68,34 @@ Beberapa proyek besar yang dipamerkan dalam website portofolio ini mencakup:
 
 ---
 
-## 🛠️ Ringkasan Kompetensi Teknis
+## Ringkasan Kompetensi Teknis
 
 Meskipun halaman utama website ini menggunakan teknologi frontend statis, seluruh portofolio proyek saya mencakup keahlian rekayasa perangkat lunak backend skala besar:
 
-### 💻 Bahasa Pemrograman & Framework
+### Bahasa Pemrograman & Framework
 * **Backend:** Go (Gin, Fiber, Echo, Chi), PHP (Laravel, CodeIgniter 3), Node.js (Express, Socket.io), Python (Flask), VB.NET (Windows Forms).
 * **Frontend:** JavaScript (ES6+), TypeScript, React, Next.js, Angular, Vue, Tailwind CSS, Bootstrap, Sass/SCSS.
 * **Mobile & Game:** React Native, Flutter (Dart), Pawn Scripting (SA-MP).
 
-### 🗄️ Basis Data & Caching
+### Basis Data & Caching
 * PostgreSQL, MySQL/MariaDB, Microsoft SQL Server, SQLite, Alibaba Cloud ApsaraDB for PolarDB.
 * Redis (Caching, Queue management, Session storage).
 
-### ⚙️ Infrastruktur & DevOps
+### Infrastruktur & DevOps
 * Docker, Podman, Kubernetes, Systemd, Linux Server (Ubuntu Server), Cloudflare.
 * Web Servers: Nginx, Apache, FRANKENPHP (Laravel Octane), IIS.
 * CI/CD, Git, GitHub Actions, GitLab CI/CD.
 
-### 🔌 Protokol & Keamanan
+### Protokol & Keamanan
 * API (RESTful API, gRPC, GraphQL, SOAP), WebPush, WebSockets, AMQP (RabbitMQ).
 * Keamanan Informasi: Penetrasi testing, enkripsi data, penanganan celah keamanan (OWASP Top 10), kepatuhan standar OJK/ISO 27001.
 
 ---
 
-## 💼 Pengalaman Kerja
+## Pengalaman Kerja
 
 <details>
-<summary><b>🛠️ Lead Backend Engineer at Redikru (Feb 2025 - Sekarang)</b></summary>
+<summary><b>Lead Backend Engineer at Redikru (Feb 2025 - Sekarang)</b></summary>
 
 * Memimpin tim Backend Engineer dalam merancang dan mengembangkan aplikasi HRIS khusus untuk pelaut dan perusahaan pelayaran di tingkat domestik maupun internasional.
 * Berkolaborasi erat dengan stakeholders utama (CTO, Product Owner, QA, Frontend, dan Data team) untuk memastikan integrasi sistem berjalan mulus.
@@ -106,7 +106,7 @@ Meskipun halaman utama website ini menggunakan teknologi frontend statis, seluru
 </details>
 
 <details>
-<summary><b>💻 Sr. Software Engineer at KoinWorks Group (Apr 2022 - Feb 2025)</b></summary>
+<summary><b>Sr. Software Engineer at KoinWorks Group (Apr 2022 - Feb 2025)</b></summary>
 
 * Merancang dan mengoptimalkan sistem pembayaran elektronik untuk berbagai skenario bisnis fintech.
 * Membangun solusi backend untuk restrukturisasi pinjaman (*loan restructuring*) dan sistem penilaian kredit (*credit underwriting*).
@@ -118,7 +118,7 @@ Meskipun halaman utama website ini menggunakan teknologi frontend statis, seluru
 </details>
 
 <details>
-<summary><b>🚀 Fullstack Engineer & Head of IT at PT Bima Registra (Agustus 2019 - April 2022)</b></summary>
+<summary><b>Fullstack Engineer & Head of IT at PT Bima Registra (Agustus 2019 - April 2022)</b></summary>
 
 * Memimpin pengembangan dan pemeliharaan website internal maupun eksternal perusahaan.
 * Mengoptimalkan layanan backend menggunakan Golang untuk menggantikan sistem berbasis PHP, yang sukses meningkatkan performa web hingga 10x-100x lebih cepat.
@@ -128,7 +128,7 @@ Meskipun halaman utama website ini menggunakan teknologi frontend statis, seluru
 
 ---
 
-## 🏆 Penghargaan & Prestasi
+## Penghargaan & Prestasi
 
 * **Juara 1 — PolarDB Global Hackathon 2023:** Kompetisi tingkat internasional yang diselenggarakan oleh Alibaba Cloud, CodePolitan, dan TIANCHI.
 * **Juara 1 — Re-Cloud Challenges 2022:** Kompetisi pengembangan web tingkat internasional menggunakan layanan Alibaba Cloud.
@@ -138,7 +138,7 @@ Meskipun halaman utama website ini menggunakan teknologi frontend statis, seluru
 
 ---
 
-## 🔑 Implementasi Proteksi DevTools
+## Implementasi Proteksi DevTools
 
 Sistem proteksi web statis yang digunakan dalam website ini diimplementasikan di berkas `perpustakaan/aplikasi/app.js`. Berikut logika pencegahannya:
 
@@ -184,7 +184,7 @@ document.addEventListener("keydown", preventViewSource);
 
 ---
 
-## 💻 Cara Menjalankan Secara Lokal
+## Cara Menjalankan Secara Lokal
 
 Sangat mudah untuk menjalankan website portofolio ini di komputer lokal Anda:
 
@@ -202,7 +202,7 @@ Sangat mudah untuk menjalankan website portofolio ini di komputer lokal Anda:
 
 ---
 
-## ✉️ Hubungi Saya
+## Hubungi Saya
 
 Mari terhubung untuk kolaborasi proyek, diskusi teknis, rekrutmen profesional, atau sekadar bertukar wawasan:
 
