@@ -767,12 +767,16 @@ body.js-enabled img.lazy-fade.loaded {
 .custom-table-container {
   margin-top: 25px;
 }
-.custom-table {
+.custom-table-wrapper {
   background: #ffffff;
   border-radius: 8px;
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #ced4da !important; /* Solid outer border */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+  overflow: hidden; /* Clip contents to preserve border-radius */
+}
+.custom-table {
+  background: #ffffff;
+  margin-bottom: 0 !important;
   font-size: 14px;
 }
 .custom-table th {
