@@ -1,4 +1,4 @@
-# Muhammad Saleh Solahudin (ZihxS)
+<h1 align="center">Muhammad Saleh Solahudin (ZihxS)</h1>
 
 <p align="center">
   <img src="media/web/ikon.png" alt="Muhammad Saleh Solahudin Logo" width="120" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);"/>
