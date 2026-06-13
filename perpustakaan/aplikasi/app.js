@@ -3,6 +3,20 @@ const navOuterHeight = $("nav").outerHeight() + 1;
 $("body").attr("data-offset", navOuterHeight + 1);
 
 $(function () {
+  // Show preloader content immediately
+  $("#isi-preloader").removeAttr('style');
+
+  // Set up progressive image lazy loading
+  $('img[loading="lazy"]').not('#chevron-down, .preloader img').addClass('lazy-fade');
+  $('body').addClass('js-enabled');
+  $('img.lazy-fade').on('load error', function () {
+    $(this).addClass('loaded');
+  }).each(function () {
+    if (this.complete) {
+      $(this).addClass('loaded');
+    }
+  });
+
   const scrollToAbout = function () {
     $("html, body").animate({
       scrollTop: $("#tentang").offset().top - navOuterHeight
@@ -15,12 +29,87 @@ $(function () {
     }, 1000);
   }
 
-  setTimeout(function () {
-    $("#isi-preloader").removeAttr('style');
-  }, 1000);
+  // Bind interactive event handlers immediately (no delay)
+  $("html").removeAttr("style");
 
-  setTimeout(function () {
-    $('.preloader').fadeOut(1000, function () {
+  const initialWidth = $(window).width();
+  if (initialWidth < 992) {
+    $("nav").addClass("bg-danger navbar-shadow");
+    $("#tombol-rekrut").attr('href', 'https://api.whatsapp.com/send?phone=6281295098759&text=Hai%20Muhammad%20Saleh%20Solahudin.%20Saya%20ingin%20memperkerjakan%20Anda%20dengan%20gaji%20Rp18.000.000%20s.d.%20*isi%20sendiri*%20untuk%20posisi%20*isi%20sendiri*.%20Catatan%20:%20*isi%20sendiri*');
+    
+    if (initialWidth < 768) {
+      $(".navbar-brand").text("M_SALEH_S");
+      $(".nama-footer").text("M SALEH SOLAHUDIN");
+    } else {
+      $(".navbar-brand, .nama-footer").text("MUHAMMAD SALEH SOLAHUDIN");
+    }
+  } else {
+    $(".navbar-brand, .nama-footer").text("MUHAMMAD SALEH SOLAHUDIN");
+    $("#tombol-rekrut").attr("onclick", "modalRekrut();");
+  }
+
+  $('header').css("height", $(window).height());
+
+  $(window).resize(function () {
+    $("header").css('height', $(this).height());
+    if ($(window).width() < 768) {
+      $(".navbar-brand").text("M_SALEH_S");
+    } else {
+      $(".navbar-brand").text("MUHAMMAD SALEH SOLAHUDIN");
+    }
+  });
+
+  $(document).scroll(function () {
+    const scrollTop = $(this).scrollTop();
+    if (animasiChevronDown) {
+      if (scrollTop >= $("#tentang").offset().top - navOuterHeight) {
+        $('#chevron-down').removeClass("animasi-chevron-down").hide();
+        animasiChevronDown = false;
+      }
+    }
+    if ($(window).width() > 991) {
+      if (scrollTop > 1) {
+        $("nav").addClass("bg-danger navbar-shadow");
+      } else {
+        $("nav").removeClass("bg-danger navbar-shadow");
+      }
+    }
+  });
+
+  $("a[href*=\"#\"]").not("[href=\"#\"]").not("[href=\"#0\"]").click(function (event) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+      let target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: target.offset().top - navOuterHeight
+        }, 1000);
+      }
+    }
+  });
+
+  $(".navbar-nav>li>a").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
+  $('#chevron-down').click(scrollToAbout);
+
+  $("[data-toggle=\"tooltip\"]").tooltip({
+    container: "body",
+    trigger: "hover"
+  });
+
+  new WOW().init();
+
+  console.log("Nama projek \t: Website Muhammad Saleh Solahudin.\nDibuat oleh \t: Muhammad Saleh Solahudin.\nDidukung oleh \t: Kopi Hitam, Lagu Jadul, Lagu Dangdut, Bacaan Ayat Suci.\nKata kata biasa : Tetap Lapar, Tetap Haus, Tetap Lelah.\nHak cipta \t\t: Sejak 2019 dan dilindungi berlapis-lapis oleh undang-undang.\n\nTerima kasih untuk :- Allah S.W.T\n\t\t\t\t\t - Nabi Muhammad S.A.W\n\t\t\t\t\t - Kedua Orang Tua\n\t\t\t\t\t - Karmila Sriwulan");
+
+  // Function to initialize typing effect and hide preloader
+  const startTypingAndShowSite = function () {
+    if (window.appStarted) return;
+    window.appStarted = true;
+
+    $('.preloader').fadeOut(800, function () {
       let welcomeStrings;
       if ($(window).width() < 575) {
         welcomeStrings = ["HAI DAN HALO !!!", "SELAMAT DATANG !!!", "SAYA ZIHXS", "SAYA M SALEH SOLAHUDIN"];
@@ -73,81 +162,17 @@ $(function () {
         }
       });
     });
+  };
 
-    $("html").removeAttr("style");
+  // Run immediately when all assets/images are fully loaded
+  $(window).on('load', function () {
+    startTypingAndShowSite();
+  });
 
-    const initialWidth = $(window).width();
-    if (initialWidth < 992) {
-      $("nav").addClass("bg-danger navbar-shadow");
-      $("#tombol-rekrut").attr('href', 'https://api.whatsapp.com/send?phone=6281295098759&text=Hai%20Muhammad%20Saleh%20Solahudin.%20Saya%20ingin%20memperkerjakan%20Anda%20dengan%20gaji%20Rp18.000.000%20s.d.%20*isi%20sendiri*%20untuk%20posisi%20*isi%20sendiri*.%20Catatan%20:%20*isi%20sendiri*');
-      
-      if (initialWidth < 768) {
-        $(".navbar-brand").text("M_SALEH_S");
-        $(".nama-footer").text("M SALEH SOLAHUDIN");
-      } else {
-        $(".navbar-brand, .nama-footer").text("MUHAMMAD SALEH SOLAHUDIN");
-      }
-    } else {
-      $(".navbar-brand, .nama-footer").text("MUHAMMAD SALEH SOLAHUDIN");
-      $("#tombol-rekrut").attr("onclick", "modalRekrut();");
-    }
-
-    $('header').css("height", $(window).height());
-
-    $(window).resize(function () {
-      $("header").css('height', $(this).height());
-      if ($(window).width() < 768) {
-        $(".navbar-brand").text("M_SALEH_S");
-      } else {
-        $(".navbar-brand").text("MUHAMMAD SALEH SOLAHUDIN");
-      }
-    });
-
-    $(document).scroll(function () {
-      const scrollTop = $(this).scrollTop();
-      if (animasiChevronDown) {
-        if (scrollTop >= $("#tentang").offset().top - navOuterHeight) {
-          $('#chevron-down').removeClass("animasi-chevron-down").hide();
-          animasiChevronDown = false;
-        }
-      }
-      if ($(window).width() > 991) {
-        if (scrollTop > 1) {
-          $("nav").addClass("bg-danger navbar-shadow");
-        } else {
-          $("nav").removeClass("bg-danger navbar-shadow");
-        }
-      }
-    });
-
-    $("a[href*=\"#\"]").not("[href=\"#\"]").not("[href=\"#0\"]").click(function (event) {
-      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-        let target = $(this.hash);
-        target = target.length ? target : $("[name=" + this.hash.slice(1) + ']');
-        if (target.length) {
-          event.preventDefault();
-          $("html, body").animate({
-            scrollTop: target.offset().top - navOuterHeight
-          }, 1000);
-        }
-      }
-    });
-
-    $(".navbar-nav>li>a").click(function () {
-      $(".navbar-collapse").collapse("hide");
-    });
-
-    $('#chevron-down').click(scrollToAbout);
-
-    $("[data-toggle=\"tooltip\"]").tooltip({
-      container: "body",
-      trigger: "hover"
-    });
-
-    new WOW().init();
-
-    console.log("Nama projek \t: Website Muhammad Saleh Solahudin.\nDibuat oleh \t: Muhammad Saleh Solahudin.\nDidukung oleh \t: Kopi Hitam, Lagu Jadul, Lagu Dangdut, Bacaan Ayat Suci.\nKata kata biasa : Tetap Lapar, Tetap Haus, Tetap Lelah.\nHak cipta \t\t: Sejak 2019 dan dilindungi berlapis-lapis oleh undang-undang.\n\nTerima kasih untuk :- Allah S.W.T\n\t\t\t\t\t - Nabi Muhammad S.A.W\n\t\t\t\t\t - Kedua Orang Tua\n\t\t\t\t\t - Karmila Sriwulan");
-  }, 4000);
+  // Safeguard: trigger after 1200ms if window load event takes too long
+  setTimeout(function () {
+    startTypingAndShowSite();
+  }, 1200);
 });
 
 $("#accordion1").on("hide.bs.collapse show.bs.collapse", event => {
