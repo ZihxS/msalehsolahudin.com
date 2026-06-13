@@ -36,7 +36,7 @@ $(function () {
           $(".typed-cursor").hide();
           $('#garis-awal').fadeIn(1000, function () {
             new Typed("#ketik-2", {
-              strings: ["SAYA SUKA PEMROGRAMAN", "SAYA SUKA TANTANGAN", "SAYA SUKA KARMILA SRI WULAN", "SAYA SENIOR FULL STACK ENGINEER"],
+              strings: ["SAYA SUKA PEMROGRAMAN", "SAYA SUKA TANTANGAN", "SAYA SUKA KARMILA SRI WULAN", "SAYA LEAD BACKEND ENGINEER"],
               typeSpeed: 60,
               backSpeed: 45,
               preStringTyped: function () {
@@ -79,7 +79,7 @@ $(function () {
     const initialWidth = $(window).width();
     if (initialWidth < 992) {
       $("nav").addClass("bg-danger navbar-shadow");
-      $("#tombol-rekrut").attr('href', 'https://api.whatsapp.com/send?phone=628974842870&text=Hai%20Muhammad%20Saleh%20Solahudin.%20Saya%20ingin%20memperkerjakan%20Anda%20dengan%20gaji%20Rp15.000.000%20s.d.%20*isi%20sendiri*%20untuk%20posisi%20*isi%20sendiri*.%20Catatan%20:%20*isi%20sendiri*');
+      $("#tombol-rekrut").attr('href', 'https://api.whatsapp.com/send?phone=6281295098759&text=Hai%20Muhammad%20Saleh%20Solahudin.%20Saya%20ingin%20memperkerjakan%20Anda%20dengan%20gaji%20Rp18.000.000%20s.d.%20*isi%20sendiri*%20untuk%20posisi%20*isi%20sendiri*.%20Catatan%20:%20*isi%20sendiri*');
       
       if (initialWidth < 768) {
         $(".navbar-brand").text("M_SALEH_S");
