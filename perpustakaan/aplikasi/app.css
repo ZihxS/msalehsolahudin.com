@@ -1,0 +1,741 @@
+@font-face {
+  font-family: "BT";
+  src: url("../fonts/baloo-thambi/baloo-thambi-v3-latin-regular.eot");
+  src:
+    url("../fonts/baloo-thambi/baloo-thambi-v3-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/baloo-thambi/baloo-thambi-v3-latin-regular.woff2") format("woff2"),
+    url("../fonts/baloo-thambi/baloo-thambi-v3-latin-regular.woff") format("woff"),
+    url("../fonts/baloo-thambi/baloo-thambi-v3-latin-regular.ttf") format("truetype"),
+    url("../fonts/baloo-thambi/baloo-thambi-v3-latin-regular.svg#Montserrat") format("svg");
+}
+
+@font-face {
+  font-family: "MONTSERRAT";
+  src: url("../fonts/montserrat/montserrat-v12-latin-regular.eot");
+  src:
+    url("../fonts/montserrat/montserrat-v12-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/montserrat/montserrat-v12-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-v12-latin-regular.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-v12-latin-regular.ttf") format("truetype"),
+    url("../fonts/montserrat/montserrat-v12-latin-regular.svg#Montserrat") format("svg");
+}
+
+@font-face {
+  font-family: "GL";
+  src: url("../fonts/gotham/GothamLight.eot");
+  src:
+    url("../fonts/gotham/GothamLight.woff") format("woff"),
+    url("../fonts/gotham/GothamLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KOHO";
+  src: url("../fonts/koho/KoHo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LATO";
+  src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RC";
+  src: url("../fonts/roboto-condensed/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SR";
+  src: url("../fonts/spicy-rice/SpicyRice-Regular.ttf") format("truetype");
+}
+
+.f-bt {
+  font-family: "BT";
+}
+
+.f-m {
+  font-family: "MONTSERRAT";
+}
+
+.f-gl {
+  font-family: "GL";
+}
+
+.f-koho {
+  font-family: "KOHO";
+}
+
+.f-lato {
+  font-family: "LATO";
+}
+
+.f-rc {
+  font-family: "RC";
+}
+
+.f-sr {
+  font-family: "SR";
+}
+
+.f-fc {
+  font-family: "FIRA CODE";
+}
+
+* {
+  font-family: "RC";
+}
+
+.p-awal-tentang-saya {
+  margin-top: -7px !important;
+}
+
+.img-pawno {
+  max-width: 40px !important;
+}
+
+.navbar-nav .nav-item:last-child,
+.navbar-nav .nav-item:last-child a {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.myaccordion {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.myaccordion .card-header {
+  background: #f5f5f5;
+}
+
+.myaccordion .fa-stack {
+  font-size: 18px;
+}
+
+.myaccordion .btn {
+  width: 100%;
+  color: #333;
+  padding: 0;
+}
+
+.myaccordion .btn i:first-child {
+  color: #dc3545;
+}
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+
+.myaccordion li+li {
+  margin-top: 10px;
+}
+
+nav {
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.navbar-shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+header hr {
+  width: 35%;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(left, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header h1 {
+  padding-top: 36vh;
+  color: #dc3545;
+  padding-bottom: 10px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  font-size: 32px;
+}
+
+header h2 {
+  color: #fff;
+  padding-top: 8px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  font-size: 24px;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../../media/background/bg-besar.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+header * {
+  padding: 0;
+  margin: 0;
+}
+
+.bungkus-chevron-down {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 10px;
+}
+
+#chevron-down {
+  width: 32px;
+  height: auto;
+}
+
+#chevron-down:hover {
+  cursor: pointer;
+}
+
+.typed-cursor {
+  color: #dc3545;
+  font-size: 32px;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+div.preloader {
+  background: -webkit-linear-gradient(90deg, #fff, #f5f5f5);
+  background: -o-linear-gradient(90deg, #fff, #f5f5f5);
+  background: linear-gradient(90deg, #fff, #f5f5f5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+}
+
+#isi-preloader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+
+#isi-preloader img {
+  width: 64px;
+  height: 64px;
+}
+
+.animasi-chevron-down {
+  animation: animasiMulai 1s linear alternate infinite;
+}
+
+@-webkit-keyframes animasiMulai {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@-moz-keyframes animasiMulai {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@-ms-keyframes animasiMulai {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@-o-keyframes animasiMulai {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes animasiMulai {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+section>div.container {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 3px solid #ee6e73;
+  min-height: 100px;
+  background-color: #dc3545;
+  text-align: center;
+}
+
+#tombol-header {
+  margin-top: 25px;
+}
+
+.bg-abu {
+  background-color: #fbfbfb;
+}
+
+#tentang,
+#kemampuan,
+#portofolio {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.judul {
+  text-align: center;
+  font-family: "BT";
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.garis {
+  width: 50%;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), red, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), red, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(left, rgba(255, 255, 255, 0), red, rgba(255, 255, 255, 0));
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding: 0;
+}
+
+.foto-tentang-saya,
+.gambar-moto-hidup {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.display-flex>[class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.bintang-1 {
+  color: #9c9c9c;
+}
+
+.bintang-2 {
+  color: #6c84cc;
+}
+
+.bintang-3 {
+  color: #6c84cc;
+}
+
+.bintang-4 {
+  color: #ccc46c;
+}
+
+.bintang-5 {
+  color: #cc6c74;
+}
+
+.mt-10px {
+  margin-top: 10px;
+}
+
+.mb-10px {
+  margin-bottom: 10px;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 100%;
+  max-height: 200px;
+}
+
+.zoom-portofolio {
+  cursor: zoom-in;
+  opacity: 0.95;
+}
+
+.zoom-portofolio:hover {
+  opacity: 1;
+}
+
+.zoom-piala {
+  cursor: zoom-in;
+  opacity: 0.95;
+}
+
+.zoom-piala:hover {
+  opacity: 1;
+}
+
+footer>div>a {
+  background-color: transparent;
+  display: inline-block;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 44px;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  margin: 0 2.5px;
+}
+
+footer>div>a:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+  box-shadow: inset 0px 0px 5px #000;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.hak-cipta {
+  color: #fff;
+  margin-top: 15px;
+  font-family: "MONTSERRAT";
+  font-size: 12px;
+}
+
+.love-link {
+  cursor: help;
+  text-decoration: none;
+  color: #ee6e73;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.love-link:hover {
+  color: #28a745;
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+}
+
+footer>div>span {
+  color: #fff;
+}
+
+footer>div>hr {
+  width: 50%;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(left, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.piala-1,
+.piala-2,
+.piala-3,
+.piala-4,
+.piala-5,
+.piala-6 {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.piala-1,
+.piala-2,
+.piala-3 {
+  margin-top: 10px !important;
+}
+
+.piala-4,
+.piala-5,
+.piala-6 {
+  margin-top: 20px !important;
+}
+
+.judul-piala {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.sub-judul-piala {
+  font-size: 12px;
+}
+
+.deskripsi-tentang-saya {
+  text-align: justify;
+}
+
+.moto-3,
+.moto-4 {
+  margin-top: 10px;
+}
+
+.nama-footer {
+  font-family: "MONTSERRAT";
+}
+
+@media (max-width: 991px) {
+  .accordion .fa-stack {
+    display: none;
+  }
+
+  .myaccordion .btn {
+    text-align: left;
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  header:before {
+    background: url(../../media/background/bg-sedang.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .deskripsi-tentang-saya {
+    text-align: center;
+  }
+
+  .foto-tentang-saya,
+  .gambar-moto-hidup {
+    width: 45%;
+  }
+
+  header hr {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .bintang-1,
+  .bintang-2,
+  .bintang-3,
+  .bintang-4,
+  .bintang-5,
+  .note-portofolio {
+    font-size: 12px;
+  }
+
+  h5.card-header {
+    font-size: 14px;
+  }
+
+  .moto-2 {
+    margin-top: 10px;
+  }
+
+  .btn-sm {
+    font-size: 12px;
+  }
+
+  .piala-2,
+  .piala-3,
+  .piala-4,
+  .piala-5,
+  .piala-6 {
+    margin-top: 20px;
+  }
+
+  #ketik-1 {
+    font-size: 28px;
+  }
+
+  #ketik-2 {
+    font-size: 20px;
+  }
+
+  .typed-cursor {
+    font-size: 28px;
+  }
+
+  .foto-tentang-saya,
+  .gambar-moto-hidup {
+    width: 65%;
+  }
+
+  footer>div>a {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 34px;
+    border: 1px solid #fff;
+    margin: 0 1.5px;
+  }
+
+  #tombol-header {
+    margin-top: 17px;
+  }
+
+  header hr {
+    width: 58%;
+  }
+
+  .garis {
+    width: 58%;
+  }
+
+  .judul {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-img-top {
+    max-height: none;
+  }
+
+  .piala-cs {
+    display: none !important;
+  }
+
+  footer>div>hr {
+    width: 70%;
+  }
+
+  #tombol-header {
+    margin-top: 13px;
+  }
+
+  header hr {
+    width: 70%;
+  }
+
+  .garis {
+    width: 70%;
+  }
+
+  .judul {
+    font-size: 25px;
+  }
+
+  #ketik-1 {
+    font-size: 21px;
+  }
+
+  #ketik-2 {
+    font-size: 15px;
+  }
+
+  .typed-cursor {
+    font-size: 21px;
+  }
+
+  .foto-tentang-saya,
+  .gambar-moto-hidup {
+    width: 90%;
+  }
+}
