@@ -399,23 +399,23 @@ const newPortfolioData = {
     title: "METECH",
     content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu: html, css, php, javascript, jquery, bootstrap, animate css, font awesome, owl carousel, wow js dan masih banyak lagi.</p>`
   },
-  20260601: {
+  2026061: {
     title: "ULTIMATE MARTIAL ARTS SMART SYSTEM",
     content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu: html, css, javascript, typescript, go, react, postgresql, vite, tanstack router, tanstack query, primereact, tailwind css, zod, react hook form, chart js, recharts, workbox, vite-plugin-pwa, lucide react, primeicons, go-chi, midtrans, webpush, go-mail, fpdf, excelize, docker, pnpm, vitest, msw, date-fns, xlsx, react hot toast dan masih banyak lagi.</p>`
   },
-  20260602: {
+  2026062: {
     title: "WELL MONITORING SYSTEM",
     content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu: html, css, javascript, typescript, php, python, laravel, flask, react, vite, postgresql, sqlite, redis, laravel octane (frankenphp), laravel sanctum, spatie permission, prophet (meta), pandas, numpy, scipy, scikit-learn, tailwind css, daisyui, material ui (mui), bootstrap, chart.js, highcharts, plotly, recharts, lightweight charts, axios, dompurify, html2canvas, jspdf, sheetjs (xlsx), moment js, docker, podman, nginx, make dan masih banyak lagi.</p>`
   },
-  20260603: {
+  2026063: {
     title: "CP LAVA PRATAMA SOLUSINDO",
     content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu: html, css, php, javascript, jquery, bootstrap, animate css, font awesome, owl carousel, wow js dan masih banyak lagi.</p>`
   },
-  20260604: {
+  2026064: {
     title: "CP & CMS ELDI",
     content: `<p>tipe projek: website</p><p>template admin: custom bootstrap 5</p><p class="mb-0">dapur pacu: html, css, php, javascript, typescript, sql (postgresql), laravel, laravel sanctum, composer, react, vite, node js, pnpm, tailwind css, emotion, radix ui, material ui (mui), embla carousel, lucide react, framer motion, react slick, react day picker, react dnd, sonner, vaul, lightgallery, easymde, chart js, recharts, jspdf, jspdf autotable, react router dom, react helmet async, bootstrap, bootstrap icons, jquery, datatables, nginx, systemd, ssh, scp, rsync, makefile, bash, ubuntu linux dan masih banyak lagi.</p>`
   },
-  20260605: {
+  2026065: {
     title: "POS APOTEK",
     content: `<p>tipe projek: website</p><p>template admin: adminlte</p><p class="mb-0">dapur pacu: html, css, php, codeigniter, javascript, sql (mysql), phpdotenv, phpspreadsheet, escpos-php, jquery, bootstrap, popper js, font awesome, select2, inputmask, sweetalert, toastr, pace, magicsuggest, typeahead, jquery hotkeys, intro js, google font api, overlay scrollbars, daterangepicker, moment js dan masih banyak lagi.</p>`
   }
