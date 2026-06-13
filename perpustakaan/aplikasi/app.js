@@ -95,6 +95,15 @@ $(function () {
 
   $('#chevron-down').click(scrollToAbout);
 
+  $('.card h5.card-header').each(function () {
+    const text = $(this).text().trim();
+    $(this).attr({
+      'data-toggle': 'tooltip',
+      'data-placement': 'top',
+      'title': text
+    });
+  });
+
   $("[data-toggle=\"tooltip\"]").tooltip({
     container: "body",
     trigger: "hover"
@@ -389,6 +398,26 @@ const newPortfolioData = {
   20233: {
     title: "METECH",
     content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu: html, css, php, javascript, jquery, bootstrap, animate css, font awesome, owl carousel, wow js dan masih banyak lagi.</p>`
+  },
+  20260601: {
+    title: "ULTIMATE MARTIAL ARTS SMART SYSTEM",
+    content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu:</p>`
+  },
+  20260602: {
+    title: "WELL MONITORING SYSTEM",
+    content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu:</p>`
+  },
+  20260603: {
+    title: "CP LAVA PRATAMA SOLUSINDO",
+    content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu:</p>`
+  },
+  20260604: {
+    title: "CP & CMS ELDI",
+    content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu:</p>`
+  },
+  20260605: {
+    title: "POS APOTEK",
+    content: `<p>tipe projek: website</p><p class="mb-0">dapur pacu:</p>`
   }
 };
 

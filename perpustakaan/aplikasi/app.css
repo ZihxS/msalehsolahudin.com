@@ -749,3 +749,10 @@ body.js-enabled img.lazy-fade {
 body.js-enabled img.lazy-fade.loaded {
   opacity: 1;
 }
+
+/* Card Header Ellipsis Truncation */
+.card h5.card-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
