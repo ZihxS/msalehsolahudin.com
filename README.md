@@ -209,7 +209,7 @@ Sangat mudah untuk menjalankan website portofolio ini di komputer lokal Anda:
 
 Mari terhubung untuk kolaborasi proyek, diskusi teknis, rekrutmen profesional, atau sekadar bertukar wawasan:
 
-* **LinkedIn:** [linkedin.com/in/muhammad-saleh-solahudin-8444171b2](https://s.id/linkedin-msalehs)
+* **LinkedIn:** [https://s.id/linkedin-msalehs](https://s.id/linkedin-msalehs)
 * **Email:** [m.saleh.solahudin@gmail.com](mailto:m.saleh.solahudin@gmail.com)
 * **WhatsApp:** [Hubungi via WhatsApp Web](https://api.whatsapp.com/send?phone=6281295098759&text=Hai%20Muhammad%20Saleh%20Solahudin)
 * **GitHub:** [@ZihxS](https://github.com/ZihxS)
