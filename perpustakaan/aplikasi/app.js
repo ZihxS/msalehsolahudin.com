@@ -189,22 +189,40 @@ $("#accordion1").on("hide.bs.collapse show.bs.collapse", event => {
 });
 
 function preventViewSource(event) {
-  if (event.ctrlKey && event.which === 85) {
-    const redirectUrls = [
-      "https://www.facebook.com/ZihxS",
-      "https://twitter.com/msalehsolahudin",
-      "https://www.instagram.com/msalehsolahudin/",
-      "https://www.youtube.com/channel/UCO3Tsp5Coo1QLsMLn17Wdug",
-      "https://www.facebook.com/milasriwulan.milasriwulan",
-      "https://twitter.com/karmilasriwulan",
-      "https://www.facebook.com/milasriwulan.milasriwulan"
-    ];
-    const randomIndex = Math.floor(Math.random() * redirectUrls.length);
-    document.location = redirectUrls[randomIndex];
+  const targetUrl = "https://github.com/ZihxS/msalehsolahudin.com";
+  const key = event.key ? event.key.toLowerCase() : "";
+  
+  // F12
+  const isF12 = event.key === "F12" || event.keyCode === 123;
+  
+  // Ctrl/Cmd + U (View Source)
+  const isViewSource = (event.ctrlKey || event.metaKey) && key === "u";
+  
+  // Ctrl/Cmd + Shift + I OR Cmd + Option + I (Inspect)
+  const isInspect = (event.ctrlKey || event.metaKey) && (event.shiftKey || event.altKey) && key === "i";
+  
+  // Ctrl/Cmd + Shift + J OR Cmd + Option + J (Console)
+  const isConsole = (event.ctrlKey || event.metaKey) && (event.shiftKey || event.altKey) && key === "j";
+  
+  // Ctrl/Cmd + Shift + C OR Cmd + Option + C (Inspect Element Selector)
+  const isSelect = (event.ctrlKey || event.metaKey) && (event.shiftKey || event.altKey) && key === "c";
+  
+  // Ctrl/Cmd + S (Save Page)
+  const isSave = (event.ctrlKey || event.metaKey) && key === "s";
+
+  if (isF12 || isViewSource || isInspect || isConsole || isSelect || isSave) {
+    event.preventDefault();
+    window.location.href = targetUrl;
     return false;
   }
 }
-document.onkeydown = preventViewSource;
+
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+  window.location.href = "https://github.com/ZihxS/msalehsolahudin.com";
+});
+
+document.addEventListener("keydown", preventViewSource);
 
 lightbox.option({
   albumLabel: "Gambar ke %1 dari %2 gambar"
