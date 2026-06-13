@@ -213,4 +213,9 @@ Mari terhubung untuk kolaborasi proyek, diskusi teknis, rekrutmen profesional, a
 * **LinkedIn:** [linkedin.com/in/muhammad-saleh-solahudin-8444171b2](https://s.id/linkedin-msalehs)
 * **Email:** [m.saleh.solahudin@gmail.com](mailto:m.saleh.solahudin@gmail.com)
 * **WhatsApp:** [Hubungi via WhatsApp Web](https://api.whatsapp.com/send?phone=6281295098759&text=Hai%20Muhammad%20Saleh%20Solahudin)
-* **TikTok / Sosmed Lainnya:** Silakan merujuk ke tautan sosial di halaman utama website portofolio.
+* **GitHub:** [@ZihxS](https://github.com/ZihxS)
+* **TikTok:** [@msalehsolahudin](https://www.tiktok.com/@msalehsolahudin)
+* **Instagram:** [@msalehsolahudin](https://www.instagram.com/msalehsolahudin/)
+* **YouTube:** [Channel YouTube](https://www.youtube.com/channel/UCO3Tsp5Coo1QLsMLn17Wdug)
+* **Facebook:** [ZihxS](https://www.facebook.com/ZihxS)
+* **Twitter / X:** [@msalehsolahudin](https://twitter.com/msalehsolahudin)
