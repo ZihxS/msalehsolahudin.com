@@ -182,6 +182,12 @@ $(function () {
   setTimeout(function () {
     startTypingAndShowSite();
   }, 1200);
+
+  // Handle click on Baca Selengkapnya text link to show collapse and hide the text link
+  $("#btn-load-more").on("click", function () {
+    $("#collapseTentang").collapse("show");
+    $(this).hide();
+  });
 });
 
 $("#accordion1").on("hide.bs.collapse show.bs.collapse", event => {

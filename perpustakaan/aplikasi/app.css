@@ -756,3 +756,9 @@ body.js-enabled img.lazy-fade.loaded {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Load More Text Hover Effect */
+.load-more-text:hover {
+  text-decoration: underline;
+  color: #a71d2a !important;
+}
