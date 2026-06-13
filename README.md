@@ -17,11 +17,7 @@
 
 ## 🖥️ Halaman Pratonton (Preview)
 
-Berikut adalah tampilan antarmuka dari website portofolio interaktif yang dapat diakses di **[msalehsolahudin.com](https://msalehsolahudin.com)**:
-
-<p align="center">
-  <img src="media/portofolio/website/personal-portofolio/2.png" alt="Website Preview" width="850" style="border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.25); border: 1px solid #ddd;"/>
-</p>
+Berikut adalah tampilan antarmuka dari website portofolio interaktif yang dapat diakses di **[msalehsolahudin.com](https://msalehsolahudin.com)**
 
 ---
 
