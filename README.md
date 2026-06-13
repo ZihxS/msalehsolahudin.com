@@ -31,6 +31,7 @@ Berikut adalah tampilan antarmuka dari website portofolio interaktif yang dapat 
 * [Ringkasan Kompetensi Teknis](#ringkasan-kompetensi-teknis)
 * [Pengalaman Kerja](#pengalaman-kerja)
 * [Penghargaan & Prestasi](#penghargaan--prestasi)
+* [Tabel Ringkasan (Khusus Desktop)](#tabel-ringkasan-khusus-desktop)
 * [Implementasi Proteksi DevTools](#implementasi-proteksi-devtools)
 * [Cara Menjalankan Secara Lokal](#cara-menjalankan-secara-lokal)
 * [Hubungi Saya](#hubungi-saya)
@@ -52,6 +53,7 @@ Website ini dikembangkan menggunakan kombinasi teknologi web statis modern denga
 | **Progressive Lazy Loading** | JS Event & CSS | Mempercepat *First Contentful Paint* (FCP) dengan merender placeholder gambar berkualitas rendah terlebih dahulu sebelum memuat gambar resolusi tinggi dengan efek *fade-in* transisi halus. |
 | **Typing Simulation** | `Typed.js` | Simulasi interaktif efek mesin tik pada bagian header perkenalan diri yang secara adaptif menyesuaikan teks berdasarkan ukuran lebar layar perangkat pengunjung. |
 | **Dinamis & Responsif** | CSS Media Queries | Mendukung pengalaman ramah seluler (*mobile-friendly*) di mana elemen antarmuka (seperti teks nama, ukuran gambar, tombol rekrutmen) menyesuaikan ukuran secara *realtime*. |
+| **Tabel Ringkasan Komprehensif** | HTML Table & Responsive CSS | Rangkuman riwayat kerja, proyek kompleks, matriks keahlian, dan prestasi dalam 4 tabel terstruktur. Ditampilkan secara khusus pada laptop/desktop (`d-none d-lg-block`) dengan animasi hover dan WOW.js. |
 | **Lightbox Gallery** | `Lightbox2` & JQuery | Memungkinkan pengunjung memperbesar tangkapan layar portofolio langsung di halaman utama tanpa harus dialihkan ke halaman lain. |
 
 ---
@@ -64,7 +66,6 @@ Beberapa proyek besar yang dipamerkan dalam website portofolio ini mencakup:
 | :--- | :--- | :--- | :--- |
 | **Ultimate Martial Arts Smart System** | Website | Go (Chi), React, PostgreSQL, Vite, Tailwind CSS, Workbox (PWA), Zod | Sistem manajemen pintar untuk seni bela diri dengan fitur push notification, fpdf, excelize, dan integrasi Midtrans. |
 | **Well Monitoring System** | Website | Laravel, Flask (Python), React, PostgreSQL, SQLite, Redis, Meta Prophet | Sistem monitoring sumur dengan machine learning untuk forecasting data menggunakan pandas, numpy, scipy, dan plotly. |
-| **CP & CMS Eldi** | Website & CMS | Laravel, React, Tailwind CSS, PostgreSQL, Framer Motion, Radix UI | Company Profile dan Content Management System (CMS) kustom berbasis admin template Bootstrap 5 dan React. |
 | **The Cloud Donation** | Website | Go (Gin), CodeIgniter, PolarDB, Redis, PM2, Midtrans | Platform donasi online berskala besar menggunakan kluster basis data PolarDB dan Redis untuk kecepatan tinggi. |
 | **Always Ngoding** | Website | CodeIgniter, Node.js, Express, Socket.io, MySQL, Cloudflare | Platform komunitas dan pembelajaran pemrograman interaktif yang didirikan sejak tahun 2022. |
 | **POS Apotek** | Website | CodeIgniter, MySQL, escpos-php, jQuery, Bootstrap, Intro.js | Aplikasi Point of Sales (POS) untuk apotek yang mendukung cetak struk kasir termal langsung via ESC/POS. |
@@ -138,6 +139,19 @@ Meskipun halaman utama website ini menggunakan teknologi frontend statis, seluru
 * **Site of the Month (Desember 2022 & September 2021):** Penghargaan website terbaik tingkat nasional dari Indonesia Website Awards (IWA) oleh PT Exabytes Network Indonesia.
 * **Juara 1 — Lomba Kompetensi Siswa (LKS) Bidang IT Software Solutions for Business (Bogor, 2018):** Kompetisi kompetensi keahlian rekayasa perangkat lunak tingkat daerah.
 * **Juara 1 — Creative & Design Website Competition (Universitas Negeri Jakarta, 2018).**
+
+---
+
+## Tabel Ringkasan (Khusus Desktop)
+
+Sebagai pemenuhan kriteria UTS Pemrograman Web I dan untuk mempermudah peninjauan profil secara cepat dan terstruktur, website ini dilengkapi dengan bagian **Ringkasan** khusus untuk tampilan laptop/desktop (disembunyikan pada perangkat mobile untuk menjaga estetika visual UI). Bagian ini memuat 4 tabel terstruktur yang telah diurutkan berdasarkan tingkat kepentingan:
+
+1. **Ringkasan Riwayat Pekerjaan**: Berisi daftar riwayat karier purna waktu (Full-time), posisi/peran, serta periode kerjanya.
+2. **Sorotan Proyek Kompleks**: Menyoroti rincian detail arsitektur teknis, tech stack, dan kompleksitas dari proyek komersial maupun non-pekerjaan/mandiri (seperti Web Always Ngoding).
+3. **Matriks Kemampuan Teknologi**: Klasifikasi kompetensi teknis (Backend, Frontend, Database, DevOps, Desktop, Mobile, Security) beserta jumlah tahun pengalaman kerja dan tingkatan kemahiran.
+4. **Rekapitulasi Prestasi**: Rangkuman pencapaian kejuaraan kompetisi IT dan pengembangan web di tingkat nasional maupun internasional.
+
+Tabel-tabel ini menggunakan desain **Glassmorphism** modern, efek transisi hover berkinerja tinggi, serta animasi masuk dinamis (`slideInLeft` / `slideInRight`) yang interaktif.
 
 ---
 
