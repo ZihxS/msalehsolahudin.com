@@ -1,4 +1,4 @@
-# Muhammad Saleh Solahudin (Zihxs)
+# Muhammad Saleh Solahudin (ZihxS)
 
 <p align="center">
   <img src="media/web/ikon.png" alt="Muhammad Saleh Solahudin Logo" width="120" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);"/>
@@ -12,7 +12,9 @@
   <a href="mailto:m.saleh.solahudin@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
-### Lead Backend Engineer | Tech Content Creator | Cyber Security Enthusiast
+<p align="center">
+  <i>Programming enthusiast since 2015 and founder of Always Ngoding, with over 7 years of experience in software engineering, specializing in financial technology, shipping logistics, and corporate systems. Passionate about cybersecurity and an active tech influencer on TikTok and LinkedIn.</i>
+</p>
 
 ---
 
